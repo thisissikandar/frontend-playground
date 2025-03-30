@@ -1,4 +1,4 @@
-const config: Omit<Config, "content"> = {
+const config = {
   darkMode: ["class", '[data-theme="dark"]'],
   theme: {
     screens: {
@@ -122,15 +122,15 @@ const config: Omit<Config, "content"> = {
         underline: 'url("/public/underline.svg")',
       },
       boxShadow: {
-        profilePic: "0px 2px 4px -2px rgba(0, 0, 0, 0.10), 0px 4px 6px -1px rgba(0, 0, 0, 0.10)",
+        profilePic:
+          "0px 2px 4px -2px rgba(0, 0, 0, 0.10), 0px 4px 6px -1px rgba(0, 0, 0, 0.10)",
       },
       gridTemplateColumns: {
-        "18": "repeat(18, minmax(0, 1fr))",
+        18: "repeat(18, minmax(0, 1fr))",
       },
     },
   },
   plugins: ["@tailwindcss/postcss"],
-
 };
 
 export default config;
